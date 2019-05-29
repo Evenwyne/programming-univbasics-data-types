@@ -25,7 +25,7 @@ _expressions_ more exciting!
 ## Define Reserved Word
 
 We haven't seen any reserved words _yet_ in Ruby, but they're the words that
-make Ruby do something else besides _evaluate_ an _expession_. They look like
+make Ruby do something else besides _evaluate_ an _expression_. They look like
 `def` or `if`.
 
 ## Define Data
