@@ -162,3 +162,4 @@ Remember conversation: if you've ever known a 3-5 year old, the process we just
 described is ***what they're doing all the time***. They're using the
 _essential three_ expressions to expand, communicate about, and re-expand their
 world!
+
