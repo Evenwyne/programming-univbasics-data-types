@@ -87,7 +87,7 @@ for the time being, though.
 Some programming languages make a difference between a single `String` element
 (called a **char** for character) and a collection of **chars** called a
 `String`. Ruby does not. A `String` of one character is a `String` just like a
-`String` with the US Constitution in it.
+`String` with the text of the US Constitution in it.
 
 You might be OK with considering `true` and `false` as being on a scale, and
 thus _scalar_; and you're probably OK with numbers like `Float`s and `Integer`s
@@ -97,15 +97,12 @@ being on a scale, and thus _scalar_; but the following might sound strange:
 Consider that each letter in a `String` is on the following _scale_:
 
 ```
-["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O",
-"P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "a", "b", "c", "d",
-"e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s",
-"t", "u", "v", "w", "x", "y", "z"]
+["AAA", "AAB", "AAC", "AAD", "AAE", "AAF", "AAG", "AAH", "AAI", "AAJ", "AAK", "AAL", "AAM", "AAN", "AAO", "AAP", "AAQ", "AAR", "AAS", "AAT", "AAU", "AAV", "AAW", "AAX", "AAY", "AAZ", "ABA"]
 ```
 
-To "go up one" from `"aaa"` we go to `"aab"`, and then `"aac"` and so on. But
-what would happen if we wanted to go "up one" from `aaz`? Well, you'd "carry"
-the `z+1`, just like arithmetic, and wind up with "abA." So, in this view,
+To "go up one" from `"AAA"` we go to `"AAB"`, and then `"AAC"` and so on. But
+what would happen if we wanted to go "up one" from `AAZ`? Well, you'd "carry"
+the `Z+1`, just like arithmetic, and wind up with "ABA." So, in this view,
 `String`s are _scalar_.
 
 ## Identify `Symbol` Values
