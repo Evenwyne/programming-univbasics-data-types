@@ -36,7 +36,7 @@ it's _data_.
 
 ## Programming as Conversation: Classification to Data Types
 
-A baby spends the fist 3-5 years of their life running _assignment expressions_
+A baby spends the first 3-5 years of their life running _assignment expressions_
 learning about "dogs," "boats," and "trains." They're adding "bare words" to
 their vocabulary that point to things.
 
