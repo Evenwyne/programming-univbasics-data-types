@@ -26,7 +26,10 @@ _expressions_ more exciting!
 
 We haven't seen any reserved words _yet_ in Ruby, but they're the words that
 make Ruby do something else besides _evaluate_ an _expression_. They look like
-`def` or `if`.
+`def` or `if`. "Reserved words" contrast with "Bare Words". Bare Words, since
+they're usually created by human programmers tend to look, human-ish:
+`dog_breed` or `my_height`. Reserved words are reserved by computers so they
+look computer-ish: `def` or `if` or `varchar` or `for`.
 
 ## Define Data
 
