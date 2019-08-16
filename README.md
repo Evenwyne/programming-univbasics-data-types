@@ -29,7 +29,7 @@ make Ruby do something else besides _evaluate_ an _expression_. They look like
 `def` or `if` or `else` or `end`.  You can't use a reserved word as a variable
 name. Ruby only has a few dozen reserved words and it will complain if you try
 to assign to one with an assignment expression. We can avoid this problem by
-having variables with descriptive names separated by `_`. 
+having variables with descriptive names separated by `_`.
 
 ## Programming as Conversation: Classification to Data Types
 
@@ -65,22 +65,16 @@ this term as we go on.
 
 ## Identify an `Integer`
 
-Figure 1: Number line
-
 There's a number _scale_ for whole numbers, or `Integer`s (-1, 0, 1, ...).
 You've created several `Integer` constants in this module.
 
 ## Identify a `Float`
-
-Figure 2: Number line
 
 There's a number _scale_ for `Float`ing point numbers
 (-0.0001...0....1,000,000).  Create `Float`s the same way you create
 `Integer`s: simply type them in.
 
 ## Identify Boolean Values
-
-Figure 3: Truth line
 
 The mathematics of _expressions_ made up only of `true` and `false` was
 established by George Boole, an English mathematician. In his honor, the
@@ -101,7 +95,7 @@ computers see `String`s as collections of numbers.
 The last data type we'll discuss is a `Symbol`. It's like a `String` but it's
 usually used when we intend for the `String` to act more like a label. They
 look like  `:i_am_a_symbol` or `:razmatazz`. It's a _scalar_ because of the
-same logic as behind a `String`. 
+same logic as behind a `String`.
 
 ## Ask IRB for the Data Type of a Value
 
