@@ -56,8 +56,12 @@ The five _scalar_ data types are:
 * `Symbol`
 
 What does "_scalar_" mean? It means, things that could be put on a _scale_. All
-of the following are _scalar_ values. "Scalar" is often used to mean "atomic"
-or "simple." You'll get the hang of this term as we go on. 
+of the following are _scalar_ values.
+
+![Image of Scales of Scalar Data](https://curriculum-content.s3.amazonaws.com/programming-univbasics/data-types/Image_89_ScalarDataTypes.png)
+
+"Scalar" is often used to mean "atomic" or "simple." You'll get the hang of
+this term as we go on.
 
 ## Identify an `Integer`
 
