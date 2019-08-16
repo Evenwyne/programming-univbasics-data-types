@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-* Define reserved word
+* Define "reserved word"
 * Define data versus other words in a Ruby file
 * Describe what a data type is
 * Identify an `Integer`
@@ -55,7 +55,7 @@ The five _scalar_ data types are:
 * `String`
 * `Symbol`
 
-What does "_scalar_" mean? It means, things that could be put on a _scale_. All
+What does "_scalar_" mean? It means things that could be put on a _scale_. All
 of the following are _scalar_ values.
 
 ![Image of Scales of Scalar Data](https://curriculum-content.s3.amazonaws.com/programming-univbasics/data-types/Image_89_ScalarDataTypes.png)
@@ -94,7 +94,7 @@ computers see `String`s as collections of numbers.
 
 The last data type we'll discuss is a `Symbol`. It's like a `String` but it's
 usually used when we intend for the `String` to act more like a label. They
-look like  `:i_am_a_symbol` or `:razmatazz`. It's a _scalar_ because of the
+look like  `:i_am_a_symbol` or `:razzmatazz`. It's a _scalar_ because of the
 same logic as behind a `String`.
 
 ## Ask IRB for the Data Type of a Value
@@ -121,7 +121,7 @@ false.class #=> FalseClass
 
 Ruby says that `10` is a `Fixnum`. A `Fixnum` is a number without a decimal, an
 `Integer`. We'll learn more about how `.class` works when we get a bit farther
-along.  For now it's enough to know that you can ask data about itself in Ruby
+along.  For now, it's enough to know that you can ask data about itself in Ruby
 (pretty amazing).
 
 ## Conclusion
