@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-* Define reserved word
+* Define "reserved word"
 * Define data versus other words in a Ruby file
 * Describe what a data type is
 * Identify an `Integer`
@@ -16,32 +16,26 @@
 ## Introduction
 
 Thus far in all the _expression_ we've learned, we've only used one type of
-_constant_: numbers. To be more specific, we've only used _whole_ numbers, or
-"Integers." But the world is not simply Integers, there are other things in the
-world: text, truth and falsity, and numbers that lie between the whole numbers
-(fractions and decimals). Let's learn about them so that we can make our
-_expressions_ more exciting!
+data in our constant expressions: numbers. To be more specific, we've only used
+_whole_ numbers, or "Integers." But the world is not simply Integers, there are
+other things in the world: text, truth and falsity, and numbers that lie
+between the whole numbers (fractions and decimals). Let's learn about them so
+that we can make our _expressions_ more exciting!
 
 ## Define Reserved Word
 
 We haven't seen any reserved words _yet_ in Ruby, but they're the words that
 make Ruby do something else besides _evaluate_ an _expression_. They look like
-`def` or `if`. "Reserved words" contrast with "Bare Words". Bare Words, since
-they're usually created by human programmers tend to look, human-ish:
-`dog_breed` or `my_height`. Reserved words are reserved by computers so they
-look computer-ish: `def` or `if` or `varchar` or `for`.
-
-## Define Data
-
-The _constants_ or _values_ are also called _data_. When Ruby looks at your
-expressions, if it's not a bare word (made by us!) or a reserved word for Ruby
-it's _data_.
+`def` or `if` or `else` or `end`.  You can't use a reserved word as a variable
+name. Ruby only has a few dozen reserved words and it will complain if you try
+to assign to one with an assignment expression. We can avoid this problem by
+having variables with descriptive names separated by `_`.
 
 ## Programming as Conversation: Classification to Data Types
 
-A baby spends the first 3-5 years of their life running _assignment expressions_
-learning about "dogs," "boats," and "trains." They're adding "bare words" to
-their vocabulary that point to things.
+A baby spends the first 3-5 years of their life running _assignment
+expressions_ learning about "dogs," "boats," and "trains." They're gaining
+variable names that they can use to "point to" the things in the world.
 
 Eventually, after they age a bit, the children start learning more advanced
 concepts like "similar" or "dissimilar" or "belonging to a group." "Sesame
@@ -61,8 +55,13 @@ The five _scalar_ data types are:
 * `String`
 * `Symbol`
 
-What does "_scalar_" mean? It means, things that could be put on a _scale_. All
+What does "_scalar_" mean? It means things that could be put on a _scale_. All
 of the following are _scalar_ values.
+
+![Image of Scales of Scalar Data](https://curriculum-content.s3.amazonaws.com/programming-univbasics/data-types/Image_89_ScalarDataTypes.png)
+
+"Scalar" is often used to mean "atomic" or "simple." You'll get the hang of
+this term as we go on.
 
 ## Identify an `Integer`
 
@@ -85,47 +84,31 @@ in Ruby expressions, you just type in `true` or `false`
 ## Identify `String` Values
 
 You create `String`s by surrounding text in `""` or `''`. We'll only use `""`
-for the time being, though.
-
-Some programming languages make a difference between a single `String` element
-(called a **char** for character) and a collection of **chars** called a
-`String`. Ruby does not. A `String` of one character is a `String` just like a
-`String` with the text of the US Constitution in it.
-
-You might be OK with considering `true` and `false` as being on a scale, and
-thus _scalar_; and you're probably OK with numbers like `Float`s and `Integer`s
-being on a scale, and thus _scalar_; but the following might sound strange:
-`String`s are also considered scalar.
-
-Consider that each letter in a `String` is on the following _scale_:
-
-```
-["AAA", "AAB", "AAC", "AAD", "AAE", "AAF", "AAG", "AAH", "AAI", "AAJ", "AAK", "AAL", "AAM", "AAN", "AAO", "AAP", "AAQ", "AAR", "AAS", "AAT", "AAU", "AAV", "AAW", "AAX", "AAY", "AAZ", "ABA"]
-```
-
-To "go up one" from `"AAA"` we go to `"AAB"`, and then `"AAC"` and so on. But
-what would happen if we wanted to go "up one" from `AAZ`? Well, you'd "carry"
-the `Z+1`, just like arithmetic, and wind up with "ABA." So, in this view,
-`String`s are _scalar_.
+for the time being, though.  You might be OK with considering `true` and
+`false` as being on a scale, and thus _scalar_; and you're probably OK with
+numbers like `Float`s and `Integer`s being on a scale, and thus _scalar_; but
+the following might sound strange: `String`s are also considered scalar because
+computers see `String`s as collections of numbers.
 
 ## Identify `Symbol` Values
 
-The last data type we'll discuss is a `Symbol`. It's like a plain old bare
-word, but with a `:` in front. It looks like `:i_am_a_symbol`. It's a _scalar_
-because of the same logic as behind a `String`. We don't use them much until we
-start using (suspense!) non-scalar data types in Ruby (which we'll learn
-later!)
-
-So now you can go back to any _assignment expression_ and change the RHS to be
-one of these new values! Try it out in IRB!
-
-```ruby
-beauty = true  # Profound! Is beauty `true`?
-```
+The last data type we'll discuss is a `Symbol`. It's like a `String` but it's
+usually used when we intend for the `String` to act more like a label. They
+look like  `:i_am_a_symbol` or `:razzmatazz`. It's a _scalar_ because of the
+same logic as behind a `String`.
 
 ## Ask IRB for the Data Type of a Value
 
-Amazingly, Ruby will tell us what kind of type a given piece of data is:
+Try assigning these types of data to a new variable in IRB. For example:
+
+```ruby
+beauty = true  # Profound! Is beauty `true`?
+angels_on_a_pinhead = 1345891
+precise_angels_on_a_pinhead = 1345891.0141125125
+```
+
+Amazingly, Ruby will tell us what kind of type a given piece of data is if we
+add `.class` to the end of a _scalar value_:
 
 ```ruby
 10.class #=> Fixnum
@@ -137,18 +120,9 @@ false.class #=> FalseClass
 ```
 
 Ruby says that `10` is a `Fixnum`. A `Fixnum` is a number without a decimal, an
-Integer. Adding `.class` to the end of a _scalar value_ invokes the `class`
-_method_ on the variable. We'll learn more about methods when we get to
-Object-Oriented Ruby, but for now it's enough to know that you can ask data
-about itself in Ruby (pretty amazing). The `class` method asks a piece of data
-what data type it has.
-
-> **WEIRDNESS**: You might also note that instead of `Boolean`, Ruby returns
-`TrueClass` and `FalseClass`. There is a subtlety about how Ruby works, but all
-programmers know that `true` and `false` are of data type `Boolean`. Knowing
-that Ruby returns `TrueClass` to `true.class` probably would help you in a Ruby
-trivia competition, but Rubyists often talk about "Boolean" values despite the
-fact that Ruby doesn't _actually_ have a Boolean type.
+`Integer`. We'll learn more about how `.class` works when we get a bit farther
+along.  For now, it's enough to know that you can ask data about itself in Ruby
+(pretty amazing).
 
 ## Conclusion
 
@@ -157,10 +131,3 @@ IRB to try the _essential three_ expressions with these new types of data. Look
 at a _constant expression_ with `String`; write an _assignment expression_ with
 a variable and a `String`; lookup the content of the variable and make sure you
 get your `String` back out.
-
-Remember conversation: if you've ever known a 3-5 year old, the process we just
-described is ***what they're doing all the time***. They're using the
-_essential three_ expressions to expand, communicate about, and re-expand their
-world!
-
-
